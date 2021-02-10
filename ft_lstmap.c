@@ -6,7 +6,7 @@
 /*   By: areinhar <areinhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/06 20:19:44 by areinhar          #+#    #+#             */
-/*   Updated: 2021/02/10 04:14:06 by areinhar         ###   ########.fr       */
+/*   Updated: 2021/02/10 04:51:17 by areinhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		result = f(lst->content);
 		if (!(result) || !(new_elem = ft_lstnew(result)))
 		{
-			del(result);
+			if (result)
+				del(result);
 			ft_lstclear(&new_lst, del);
 			break ;
 		}
