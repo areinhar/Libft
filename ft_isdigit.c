@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: areinhar <areinhar@student.s19.be>         +#+  +:+       +#+        */
+/*   By: areinhar <areinhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 16:54:59 by areinhar          #+#    #+#             */
-/*   Updated: 2021/02/05 19:01:02 by areinhar         ###   ########.fr       */
+/*   Updated: 2021/02/10 02:04:33 by areinhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isdigit(int c)
 {
-	if ('0' <= c && c <= '9')
-		return (1);
-	return (0);
+	return ('0' <= c && c <= '9');
 }

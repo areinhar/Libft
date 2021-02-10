@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: areinhar <areinhar@student.s19.be>         +#+  +:+       +#+        */
+/*   By: areinhar <areinhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 16:56:00 by areinhar          #+#    #+#             */
-/*   Updated: 2021/02/05 19:00:45 by areinhar         ###   ########.fr       */
+/*   Updated: 2021/02/10 02:04:07 by areinhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isascii(int c)
 {
-	if (0 <= c && c <= 127)
-		return (1);
-	return (0);
+	return (0 <= c && c <= 127);
 }

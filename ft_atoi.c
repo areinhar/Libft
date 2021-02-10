@@ -6,7 +6,7 @@
 /*   By: areinhar <areinhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/06 19:54:02 by areinhar          #+#    #+#             */
-/*   Updated: 2021/02/07 21:00:48 by areinhar         ###   ########.fr       */
+/*   Updated: 2021/02/09 20:56:52 by areinhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	ft_atoi(const char *nptr)
 	i = 0;
 	sign = 1;
 	answer = 0;
+	if (!nptr)
+		return (0);
 	while ((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32)
 		nptr++;
 	if (nptr[i] == '-' || nptr[i] == '+')

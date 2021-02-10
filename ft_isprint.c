@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: areinhar <areinhar@student.s19.be>         +#+  +:+       +#+        */
+/*   By: areinhar <areinhar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/01/07 16:56:23 by areinhar          #+#    #+#             */
-/*   Updated: 2021/02/05 19:01:14 by areinhar         ###   ########.fr       */
+/*   Updated: 2021/02/10 02:42:09 by areinhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 
 int	ft_isprint(int c)
 {
-	if (32 <= c && c <= 126)
-		return (1);
-	return (0);
+	return (32 <= c && c <= 126);
 }
